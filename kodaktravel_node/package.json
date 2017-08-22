@@ -1,0 +1,28 @@
+{
+  "name": "kodaktravel",
+  "version": "1.0.0",
+  "description": "This site is meant to give information about how to travel and vacay cheap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molayodecker/TravelGuide.git"
+  },
+  "keywords": [
+    "travelGuide",
+    "Photography",
+    "Video",
+    "Travel"
+  ],
+  "author": "Arthur Decker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/molayodecker/TravelGuide/issues"
+  },
+  "homepage": "https://github.com/molayodecker/TravelGuide#readme",
+  "devDependencies": {
+    "gulp-install": "^1.1.0"
+  }
+}
