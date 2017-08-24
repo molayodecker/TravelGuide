@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/molayodecker/TravelGuide#readme",
   "devDependencies": {
-    "gulp-install": "^1.1.0"
+    "gulp-install": "^1.1.0",
+    "gulp-jslint": "^1.0.10"
   }
 }
