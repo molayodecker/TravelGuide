@@ -7,8 +7,9 @@ uglify = require('gulp-uglify'),
 compass = require('gulp-compass'),
 browserSync = require('browser-sync'),
 reload = browserSync.reload,
-autoprefixer = require('gulp-autoprefixer');
-plumber = require('gulp-plumber');
+autoprefixer = require('gulp-autoprefixer'),
+plumber = require('gulp-plumber'),
+del = require('del'),
 rename = require('gulp-rename');
 
 //////////////////////////////////////
@@ -20,7 +21,8 @@ gulp.task('scripts', function(){
 	.pipe(plumber())
 	.pipe(rename({suffix:'.min'}))
 	.pipe(uglify())
-	.pipe(gulp.dest('app/js/'));
+	.pipe(gulp.dest('app/js/'))
+	.pipe(reload({stream:true}));
 });
 
  //////////////////////////////////////
@@ -28,10 +30,10 @@ gulp.task('scripts', function(){
 /////////////////////////////////////  
 
 gulp.task('compass', function(){
-	gulp.src('app/sass/style.sass')
+	gulp.src('app/sass/**/*.scss')
 	.pipe(plumber())
 	.pipe(compass({
-		config_file: './config.rb',
+		config_file: 'config.rb',
 		css: 'app/css',
 		sass: 'app/sass',
 		require: ['susy']
