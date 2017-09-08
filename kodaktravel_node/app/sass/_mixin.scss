@@ -1,0 +1,15 @@
+@mixin backImage($image, $height:100vh, $grstart:rgba(0,0,0,.2), $grend:(0,0,0,.5)) {    
+    $bgPos: center center;
+	//background-image: linear-gradient(to bottom,$grstart,$grend), url($image);
+	background: url($image);
+	background-repeat: no-repeat;
+	background-position: $bgPos;
+	background-size: cover;
+	height: 100%;
+	max-height: $height;
+}
+
+.header{
+	@include backImage('http://via.placeholder.com/350x150');
+}
+

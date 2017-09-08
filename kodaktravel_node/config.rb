@@ -13,7 +13,7 @@ images_dir = "images"
 javascripts_dir = "js"
 line_comments = false
 preferred_syntax = :scss
-output_style = :compressed
+output_style = :expanded
 relative_asset = true 
 
 # You can select your preferred output style here (can be overridden via the command line):
