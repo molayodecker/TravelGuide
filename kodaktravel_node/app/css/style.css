@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,600,700");
 .header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url("../images/backgrounds/DJI_0115.JPG");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/backgrounds/DJI_0115.JPG");
+  background: url("../images/backgrounds/DJI_0002.JPG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  max-height: 100vh;
+  max-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,35 +14,58 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 600px) {
+  .header {
+    background: url("../images/backgrounds/DJI_0002.JPG");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 800px;
+  }
+}
 
 .nav {
   margin-top: 1.75rem;
 }
-.nav .nav-elements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 600px) {
+  .nav .nav-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .nav .nav-elements .branding {
   max-width: 200px;
-  width: 30%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+  .nav .nav-elements .branding {
+    width: 30%;
+    margin: 0;
+  }
 }
 .nav .nav-elements .navbar {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   line-height: 150%;
   list-style-type: none;
-  width: 70%;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .nav .nav-elements .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+  }
 }
 .nav .nav-elements a {
   font-weight: 600;

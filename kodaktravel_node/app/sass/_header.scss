@@ -1,0 +1,12 @@
+$randomNumber: random(5);
+
+.header{
+	@include backImage('../images/backgrounds/DJI_000' + $randomNumber + '.JPG', 500px);
+    
+    @media screen and (min-width: 600px){
+    	@include backImage('../images/backgrounds/DJI_000' + $randomNumber + '.JPG', 800px);
+    }
+    
+	display: flex;
+	flex-direction: column;
+}
